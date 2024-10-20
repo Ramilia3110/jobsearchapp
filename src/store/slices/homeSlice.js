@@ -23,25 +23,98 @@ export const fetchByAllJobs = createAsyncThunk(
 
 // Function to apply filters and return only matching jobs
 
+// const applySearch = (jobs, search) => {
+//   const { searchText, company, location, jobType, jobLevel, jobSort } = search;
+
+//   // Apply filters
+//   let filteredJobs = jobs.filter((job) => {
+//     return (
+//       (!searchText ||
+//         (job.title &&
+//           job.title.toLowerCase().includes(searchText.toLowerCase()))) &&
+//       (!company ||
+//         (job.company &&
+//           job.company.toLowerCase().includes(company.toLowerCase()))) &&
+//       (!location ||
+//         (job.location &&
+//           job.location.toLowerCase().includes(location.toLowerCase()))) &&
+//       (!jobType || job.type === jobType) &&
+//       (!jobLevel || job.level === jobLevel)
+//     );
+//   });
+
+//   // Apply sorting logic based on jobSort
+//   if (jobSort === "title_asc") {
+//     filteredJobs = filteredJobs.sort((a, b) =>
+//       a.title && b.title ? a.title.localeCompare(b.title) : 0
+//     );
+//   } else if (jobSort === "title_desc") {
+//     filteredJobs = filteredJobs.sort((a, b) =>
+//       a.title && b.title ? b.title.localeCompare(a.title) : 0
+//     );
+//   } else if (jobSort === "company_asc") {
+//     filteredJobs = filteredJobs.sort((a, b) =>
+//       a.company && b.company ? a.company.localeCompare(b.company) : 0
+//     );
+//   } else if (jobSort === "company_desc") {
+//     filteredJobs = filteredJobs.sort((a, b) =>
+//       a.company && b.company ? b.company.localeCompare(a.company) : 0
+//     );
+//   } else if (jobSort === "location_asc") {
+//     filteredJobs = filteredJobs.sort((a, b) =>
+//       a.location && b.location ? a.location.localeCompare(b.location) : 0
+//     );
+//   } else if (jobSort === "location_desc") {
+//     filteredJobs = filteredJobs.sort((a, b) =>
+//       a.location && b.location ? b.location.localeCompare(a.location) : 0
+//     );
+//   }
+
+//   return filteredJobs;
+// };
+
 const applySearch = (jobs, search) => {
   const { searchText, company, location, jobType, jobLevel, jobSort } = search;
 
   // Apply filters
-  let filteredJobs = jobs.filter((job) => {
-    return (
-      (!searchText ||
+  let filteredJobs = jobs;
+
+  // Filter by search text (job title or description)
+  if (searchText) {
+    filteredJobs = filteredJobs.filter(
+      (job) =>
         (job.title &&
-          job.title.toLowerCase().includes(searchText.toLowerCase()))) &&
-      (!company ||
-        (job.company &&
-          job.company.toLowerCase().includes(company.toLowerCase()))) &&
-      (!location ||
-        (job.location &&
-          job.location.toLowerCase().includes(location.toLowerCase()))) &&
-      (!jobType || job.type === jobType) &&
-      (!jobLevel || job.level === jobLevel)
+          job.title.toLowerCase().includes(searchText.toLowerCase())) ||
+        (job.desc && job.desc.toLowerCase().includes(searchText.toLowerCase()))
     );
-  });
+  }
+
+  // Filter by company
+  if (company) {
+    filteredJobs = filteredJobs.filter(
+      (job) =>
+        job.company && job.company.toLowerCase().includes(company.toLowerCase())
+    );
+  }
+
+  // Filter by location within the filtered company
+  if (location) {
+    filteredJobs = filteredJobs.filter(
+      (job) =>
+        job.location &&
+        job.location.toLowerCase().includes(location.toLowerCase())
+    );
+  }
+
+  // Filter by job type
+  if (jobType) {
+    filteredJobs = filteredJobs.filter((job) => job.type === jobType);
+  }
+
+  // Filter by job level
+  if (jobLevel) {
+    filteredJobs = filteredJobs.filter((job) => job.level === jobLevel);
+  }
 
   // Apply sorting logic based on jobSort
   if (jobSort === "title_asc") {

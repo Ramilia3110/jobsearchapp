@@ -7,6 +7,7 @@ import {
   applySearchToJobs,
   clearAllFilters,
 } from "../../store/slices/homeSlice";
+import { h1 } from "framer-motion/client";
 
 const Search = ({ handleNotFound }) => {
   const [searchText, setSearchText] = useState("");
@@ -29,6 +30,9 @@ const Search = ({ handleNotFound }) => {
     search.jobSort = jobSort;
 
     dispatch(applySearchToJobs(search));
+    if (jobs.length > 0) {
+      handleNotFound();
+    }
   };
 
   const handleFilterChange = (e) => {
