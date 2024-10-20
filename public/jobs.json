@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/shopping.png",
+    "title": "Web Developer",
+    "time": "Now",
+    "location": "Toronto, Canada",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Amazon.com, Inc.",
+    "type": "full_time",
+    "level": "senior"
+  },
+  {
+    "id": 2,
+    "image": "/assets/meta.png",
+    "title": "UI Designer",
+    "time": "1 Hr",
+    "location": "London, UK",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Meta",
+    "type": "part_time",
+    "level": "junior"
+  },
+  {
+    "id": 3,
+    "image": "/assets/google.png",
+    "title": "Software Engineer",
+    "time": "8 Hrs",
+    "location": "Chicago, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Google",
+    "type": "full_time",
+    "level": "senior"
+  },
+  {
+    "id": 4,
+    "image": "/assets/microsoft.png",
+    "title": "Frontend Developer",
+    "time": "10 Hrs",
+    "location": "Paris, France",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Microsoft",
+    "type": "part_time",
+    "level": "junior"
+  },
+  {
+    "id": 5,
+    "image": "/assets/google.png",
+    "title": "Backend Developer",
+    "time": "3 Hrs",
+    "location": "New York, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Google",
+    "type": "full_time",
+    "level": "intermediate"
+  },
+  {
+    "id": 6,
+    "image": "/assets/meta.png",
+    "title": "UX Researcher",
+    "time": "2 Hrs",
+    "location": "San Francisco, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Meta",
+    "type": "part_time",
+    "level": "senior"
+  },
+  {
+    "id": 7,
+    "image": "/assets/shopping.png",
+    "title": "Data Scientist",
+    "time": "1 Day",
+    "location": "Toronto, Canada",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Amazon.com, Inc.",
+    "type": "full_time",
+    "level": "junior"
+  },
+  {
+    "id": 8,
+    "image": "/assets/microsoft.png",
+    "title": "Mobile Developer",
+    "time": "5 Hrs",
+    "location": "Berlin, Germany",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Microsoft",
+    "type": "contract",
+    "level": "intermediate"
+  },
+  {
+    "id": 9,
+    "image": "/assets/google.png",
+    "title": "DevOps Engineer",
+    "time": "12 Hrs",
+    "location": "Austin, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Google",
+    "type": "full_time",
+    "level": "senior"
+  },
+  {
+    "id": 10,
+    "image": "/assets/meta.png",
+    "title": "Product Manager",
+    "time": "7 Hrs",
+    "location": "London, UK",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Meta",
+    "type": "remote",
+    "level": "intermediate"
+  },
+  {
+    "id": 11,
+    "image": "/assets/shopping.png",
+    "title": "Cloud Engineer",
+    "time": "9 Hrs",
+    "location": "Seattle, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Amazon.com, Inc.",
+    "type": "full_time",
+    "level": "senior"
+  },
+  {
+    "id": 12,
+    "image": "/assets/microsoft.png",
+    "title": "Game Developer",
+    "time": "2 Days",
+    "location": "Stockholm, Sweden",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Microsoft",
+    "type": "full_time",
+    "level": "beginner"
+  },
+  {
+    "id": 13,
+    "image": "/assets/google.png",
+    "title": "Data Engineer",
+    "time": "3 Days",
+    "location": "Chicago, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Google",
+    "type": "remote",
+    "level": "intermediate"
+  },
+  {
+    "id": 14,
+    "image": "/assets/shopping.png",
+    "title": "Network Administrator",
+    "time": "1 Hr",
+    "location": "Vancouver, Canada",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Amazon.com, Inc.",
+    "type": "contract",
+    "level": "junior"
+  },
+  {
+    "id": 15,
+    "image": "/assets/meta.png",
+    "title": "Security Analyst",
+    "time": "8 Hrs",
+    "location": "San Francisco, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Meta",
+    "type": "full_time",
+    "level": "senior"
+  },
+  {
+    "id": 16,
+    "image": "/assets/google.png",
+    "title": "Site Reliability Engineer",
+    "time": "4 Hrs",
+    "location": "Berlin, Germany",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Google",
+    "type": "remote",
+    "level": "intermediate"
+  },
+  {
+    "id": 17,
+    "image": "/assets/shopping.png",
+    "title": "Tech Lead",
+    "time": "3 Hrs",
+    "location": "Toronto, Canada",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Amazon.com, Inc.",
+    "type": "full_time",
+    "level": "senior"
+  },
+  {
+    "id": 18,
+    "image": "/assets/meta.png",
+    "title": "Business Analyst",
+    "time": "2 Days",
+    "location": "London, UK",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Meta",
+    "type": "part_time",
+    "level": "junior"
+  },
+  {
+    "id": 19,
+    "image": "/assets/microsoft.png",
+    "title": "IT Support Specialist",
+    "time": "5 Hrs",
+    "location": "Paris, France",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Microsoft",
+    "type": "remote",
+    "level": "beginner"
+  },
+  {
+    "id": 20,
+    "image": "/assets/shopping.png",
+    "title": "Database Administrator",
+    "time": "12 Hrs",
+    "location": "Seattle, US",
+    "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, laudantium.",
+    "company": "Amazon.com, Inc.",
+    "type": "contract",
+    "level": "senior"
+  }
+]
